@@ -7,24 +7,11 @@ CXX		?= g++
 
 INCLUDES	+= -I ./includes
 ###################
-### Engine.CORE
-CORE		= src/engine/core/object.cpp
-
-### Engines
-Engines		= $(CORE)
-
-### Serial -> Json Serialisation
-Serial		= src/serialization/serializable.cpp \
-		src/serialization/serial.cpp
-
-### FileSystem -> Oop FieSystem
-FileSystem	= src/filesystem/file.cpp \
-		src/filesystem/directory.cpp
 ###################
 CXXSRC		+= $(Serial) $(FileSystem) $(Engines)
 CSRC		+=
 
-FLAGS		=  $(INCLUDES)  -I renderer/libraries/GdlLibrary/includes/
+FLAGS		=  $(INCLUDES)
 CFLAGS		+= $(FLAGS) -Wall
 CXXFLAGS	+= $(FLAGS) -std=c++11
 LDFLAGS		+= -lpthread
