@@ -8,7 +8,7 @@ CXX		?= g++
 INCLUDES	+= -I ./includes
 ###################
 ###################
-CXXSRC		+= $(Serial) $(FileSystem) $(Engines)
+CXXSRC		+=
 CSRC		+=
 
 FLAGS		=  $(INCLUDES)
