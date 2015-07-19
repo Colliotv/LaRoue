@@ -7,8 +7,18 @@ CXX		?= g++
 
 INCLUDES	+= -I ./includes
 ###################
+#### Engines
+Serialization	=\
+		src/engine/serialization/json.cpp	\
+		src/engine/serialization/serial.cpp	\
+		src/engine/serialization/serializer.cpp	\
+
+Engines		= $(Serialization)
+#### Core
+Core		=
+
 ###################
-CXXSRC		+=
+CXXSRC		+= $(Engines) $(Core)
 CSRC		+=
 
 FLAGS		=  $(INCLUDES)
