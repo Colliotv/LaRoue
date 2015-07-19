@@ -5,5 +5,5 @@
 
 int main() {
   laroue::engine::serialization::Serial s( std::shared_ptr<std::string> {} );
-  new laroue::engine::serialization::JSONSerialization();
+  laroue::engine::serialization::JSONSerialization();
 }

@@ -1,0 +1,23 @@
+*
+
+!.gitignore
+
+#basics
+!Makefile
+!*/
+
+#sources
+!*.c
+!*.cpp
+!*.h
+!*.hh
+!*.hpp
+
+#shaders
+
+#external libraires
+!*.a
+
+
+#testings
+main.cpp
