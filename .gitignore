@@ -18,6 +18,5 @@
 #external libraires
 !*.a
 
-
 #testings
 main.cpp
